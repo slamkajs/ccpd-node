@@ -1,0 +1,69 @@
+<h1>CCPD Activities</h1>
+<p>There are currently <%= activities.count %> activities in the database.</p>
+<form method="post" action="<%= url %>">
+</form>
+
+<!-- FACET BREAKOUT -->
+<ul>
+<% for(var facet in facets) { %>
+	<% if(facet.toLowerCase() != 'title') { %>
+	<li><%= facet %>
+		<ul>
+		<% for(var z = 0; z < facets[facet].length; z+=2) { %>
+			<li><%= facets[facet][z] %> (<%= facets[facet][z+1] %>)</li>
+		<% } %>
+		</ul>
+	</li>
+	<% } %>
+<% } %>
+</ul>
+
+<!-- TOP PAGER START -->
+<p>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != 1) { %>
+	<a href="<%= url %>?page=1">First</a>
+<% } %>
+<% for(var i=0; i<pager.pages.length; i++) {%>
+	<% if(pager.pages[i] != pager.currentPage) { %>
+		<a href="<%= url %>?page=<%= pager.pages[i] %>"><%= pager.pages[i] %></a>
+	<% } else { %>
+		<%= pager.pages[i] %>
+	<% } %>
+<% } %>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != pager.totalPages) { %>
+	<a href="<%= url %>?page=<%= pager.totalPages %>">Last</a>
+<% } %>
+</p>
+<!-- TOP PAGER END -->
+
+
+<ul>
+<% for(var i=0; i<activities.list.length; i++) {%>
+	<li><a href="/activities/<%= activities.list[i].id %>"><%= activities.list[i].title %></a></li>
+<% } %>
+</ul>
+
+<!-- BOTTOM PAGER START -->
+<p>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != 1) { %>
+	<a href="<%= url %>?page=1">First</a>
+<% } %>
+<% for(var i=0; i<pager.pages.length; i++) {%>
+	<% if(pager.pages[i] != pager.currentPage) { %>
+		<a href="<%= url %>?page=<%= pager.pages[i] %>"><%= pager.pages[i] %></a>
+	<% } else { %>
+		<%= pager.pages[i] %>
+	<% } %>
+<% } %>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != pager.totalPages) { %>
+	<a href="<%= url %>?page=<%= pager.totalPages %>">Last</a>
+<% } %>
+</p>
+<!-- BOTTOM PAGER END -->
+
+<!-- // DEBUG START // -->
+<!-- **PAGER DEBUG -->
+<!--<% for(var item in pager) { %>
+<%= item %> : <%= pager[item] %>
+<% } %> -->
+<!-- // DEBUG END // -->

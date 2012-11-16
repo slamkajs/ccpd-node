@@ -1,0 +1,15 @@
+{
+  "name": "Activities",
+  "version": "0.0.1",
+  "main": "solr_db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "2.5.11",
+    "ejs": "0.7.2",
+    "solr-client":"0.2.4"
+  },
+  "author": "Justin Slamka",
+  "license": "BSD"
+}

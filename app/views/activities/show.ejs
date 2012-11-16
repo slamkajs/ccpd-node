@@ -1,0 +1,13 @@
+<h1>CCPD Activity #<%= activity.id %></h1>
+<h3><%= activity.title %></h3>
+
+<ul>
+<% for(var prop in activity) { %>
+	<% if(!findProp(exceptionsList, prop)) { %> 
+	<li><strong><%= prop.toUpperCase().replace(/_/g, ' ', 'ALL') %>:</strong> <%= activity[prop] %></li>
+	<% } %>
+<% } %>
+</ul>
+
+<p><a href="<%= referrer %>">Return to list</a></p>
+

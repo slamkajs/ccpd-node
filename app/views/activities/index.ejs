@@ -1,0 +1,45 @@
+<h1>CCPD Activities</h1>
+<p>There are currently <%= activities.count %> activities in the database.</p>
+
+<!-- TOP PAGER START -->
+<p>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != 1) { %>
+	<a href="/activities?page=1">First</a>
+<% } %>
+<% for(var i=0; i<pager.pages.length; i++) {%>
+	<% if(pager.pages[i] != pager.currentPage) { %>
+		<a href="/activities?page=<%= pager[i] %>"><%= pager.pages[i] %></a>
+	<% } else { %>
+		<%= pager.pages[i] %>
+	<% } %>
+<% } %>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != pager.totalPages) { %>
+	<a href="/activities?page=<%= pager.totalPages %>">Last</a>
+<% } %>
+</p>
+<!-- TOP PAGER END -->
+
+
+<ul>
+<% for(var i=0; i<activities.list.length; i++) {%>
+	<li><a href="/activities/<%= activities.list[i].id %>"><%= activities.list[i].title %></a></li>
+<% } %>
+</ul>
+
+<!-- BOTTOM PAGER START -->
+<p>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != 1) { %>
+	<a href="/activities?page=1">First</a>
+<% } %>
+<% for(var i=0; i<pager.pages.length; i++) {%>
+	<% if(pager.pages[i] != pager.currentPage) { %>
+		<a href="/activities?page=<%= pager[i] %>"><%= pager.pages[i] %></a>
+	<% } else { %>
+		<%= pager.pages[i] %>
+	<% } %>
+<% } %>
+<% if(pager.pages.length < pager.totalPages && pager.currentPage != pager.totalPages) { %>
+	<a href="/activities?page=<%= pager.totalPages %>">Last</a>
+<% } %>
+</p>
+<!-- BOTTOM PAGER END -->

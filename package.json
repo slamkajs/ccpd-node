@@ -6,7 +6,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "zlib": "1.x.x",
     "express": "2.5.11",
     "ejs": "0.7.2",
     "solr-client":"0.2.4"

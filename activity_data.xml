@@ -1,4 +1,4 @@
-<result name="response" numFound="11805" start="0">
+<add>
 	<doc>
 		<str name="id">1</str>
 		<str name="title">Pediatrics 2000</str>
@@ -11059,4 +11059,5 @@
 		<int name="grouping_id">2</int>
 		<str name="activity_type">Live</str>
 		<date name="start_date">2001-08-15T04:00:00Z</date>
-	</doc></result>
+	</doc>
+</add>

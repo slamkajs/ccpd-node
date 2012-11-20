@@ -3,14 +3,15 @@
 <form method="post" action="<%= url %>">
 </form>
 
+
 <!-- FACET BREAKOUT -->
 <ul>
-<% for(var facet in facets) { %>
+<% for(var facet in activities.facets) { %>
 	<% if(facet.toLowerCase() != 'title') { %>
 	<li><%= facet %>
 		<ul>
-		<% for(var z = 0; z < facets[facet].length; z+=2) { %>
-			<li><%= facets[facet][z] %> (<%= facets[facet][z+1] %>)</li>
+		<% for(var z = 0; z < activities.facets[facet].length; z+=2) { %>
+			<li><%= activities.facets[facet][z] %> (<%= activities.facets[facet][z+1] %>)</li>
 		<% } %>
 		</ul>
 	</li>

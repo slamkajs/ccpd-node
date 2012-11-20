@@ -9,10 +9,12 @@ exports.index = function(req, res){
     var startRecord = 1;
     var perPage = 10;
 
+    // BREAK APART THE QUERYSTRING
     if(qs && qs.length > 0) {
         qs = qs.split('&')
     }
 
+    // LOOP OVER QUERYSTRING
     for(var curr in qs) {
         pair = qs[curr].split('=');
 
@@ -27,27 +29,33 @@ exports.index = function(req, res){
         }
     }
 
+    // DETERMINE IF THE START RECORD HAS BEEN SET TO A NEGATIVE OR ZERO
     if(startRecord <= 0) startRecord = 1;
 
+    // CREATE THE SOLR QUERY
     var solrQuery = solr.createQuery()
                                    .q({'*' : '*'})
                                    .start(startRecord)
                                    .rows(perPage);
 
+    // INIT THE SOLR QUERY
     solr.search(solrQuery, function(err, ret) {
         var response = ret.response;
         var pagesToShow = 10;
         var pagingCounter = Math.round(startRecord/perPage)-(pagesToShow/2);
-
         var activities = {};
+        var pager = {};
+
+        // DEFINE THE ACTIVITIES OBJECT
         activities.list = response.docs;
         activities.count = response.numFound.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-        var pager = {};
+        // DEFINE THE PAGER OBJECT
         pager.pages = [];
         pager.currentPage = page;
         pager.totalPages = Math.round(response.numFound/perPage);
 
+        // CREATE THE PAGES ARRAY
         for(var counter = 1; counter < pagesToShow; counter++) {
             if(pagingCounter <= 0) pagingCounter = counter;
 
@@ -57,6 +65,7 @@ exports.index = function(req, res){
             }
         }
 
+        // RENDER THE PAGE
         res.render('activities/index', {
             title: 'Activities',
             url: url,
@@ -76,9 +85,12 @@ exports.search = function(req, res){
     var perPage = 10;
     var query = {'*' : '*'};
 
+    // BREAK APART THE QUERYSTRING
     if(qs && qs.length > 0) {
         qs = qs.split('&')
     }
+
+    // LOOP OVER THE QUERYSTRING
     for(var curr in qs) {
         pair = qs[curr].split('=');
 
@@ -98,8 +110,10 @@ exports.search = function(req, res){
         }
     }
 
+    // DETERMINE IF THE START RECORD WAS SET TO A NEGATIVE OR ZERO
     if(startRecord <= 0) startRecord = 1;
 
+    // BUILD THE SOLR QUERY
     var solrQuery = solr.createQuery()
                                    .q(query)
                                    .start(startRecord)
@@ -109,21 +123,22 @@ exports.search = function(req, res){
                                    .facet({'field':'session_type'})
                                    .facet({'field':'activity_type'});
 
+    // RUN THE SOLR QUERY
     solr.search(solrQuery, function(err, ret) {
         var response = ret.response;
-        var response_facets = ret.facet_counts.facet_fields;
         var pagesToShow = 10;
-
         var activities = {};
-        activities.list = response.docs;
-        activities.count = response.numFound.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
         var pager = {};
+        var pagingCounter = Math.round(startRecord/perPage)-(pagesToShow/2);
+
+        activities.list = response.docs;
+        activities.facets = ret.facet_counts.facet_fields;
+        activities.count = response.numFound.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        console.log(activities);
         pager.pages = [];
         pager.currentPage = page;
         pager.totalPages = Math.round(response.numFound/perPage);
 
-        var pagingCounter = Math.round(startRecord/perPage)-(pagesToShow/2);
 
         for(var counter = 1; counter < pagesToShow; counter++) {
             if(pagingCounter <= 0) pagingCounter = counter;
@@ -138,7 +153,6 @@ exports.search = function(req, res){
             url: url,
             title: 'Activities',
             activities: activities,
-            facets: response_facets,
             pager: pager
         });
     });

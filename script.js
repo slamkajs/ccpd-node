@@ -11,5 +11,6 @@ require('./config/routes')(app);
 app.on('listening',function(){
     console.log('ok, server is running');
 });
- 
-app.listen(42010);
+
+var port = process.env.PORT || 3000;
+app.listen(port);

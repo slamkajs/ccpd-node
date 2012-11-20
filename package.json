@@ -11,9 +11,9 @@
     "npm": "1.1.65"
   },
   "dependencies": {
-    "express": "2.x.x",
-    "ejs": "0.7.2",
-    "solr-client":"0.2.4"
+    "express": "latest",
+    "ejs": "latest",
+    "solr-client":"latest"
   },
   "author": "Justin Slamka",
   "license": "BSD"

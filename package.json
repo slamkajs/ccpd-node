@@ -11,7 +11,7 @@
     "npm": "1.1.65"
   },
   "dependencies": {
-    "express": "latest",
+    "express": "3.x.x",
     "ejs": "latest",
     "solr-client":"latest"
   },

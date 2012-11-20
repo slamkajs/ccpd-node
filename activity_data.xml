@@ -1798,8 +1798,8 @@
 	</doc>
 	<doc>
 		<str name="id">163</str>
-		<str name="title">Current and New Pharmacological Approaches to Treatment of Heroin, Cocaine & Alcohol Dependence</str>
-		<str name="search_all">Current and New Pharmacological Approaches to Treatment of Heroin, Cocaine & Alcohol Dependence Regularly Scheduled Series RSS Live   03/29/2000  2000  03  </str>
+		<str name="title">Current and New Pharmacological Approaches to Treatment of Heroin, Cocaine &amp; Alcohol Dependence</str>
+		<str name="search_all">Current and New Pharmacological Approaches to Treatment of Heroin, Cocaine &amp; Alcohol Dependence Regularly Scheduled Series RSS Live   03/29/2000  2000  03  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -2480,8 +2480,8 @@
 	</doc>
 	<doc>
 		<str name="id">225</str>
-		<str name="title">Hemodynamic Monitoring: Concepts & Controversies</str>
-		<str name="search_all">Hemodynamic Monitoring: Concepts & Controversies Regularly Scheduled Series RSS Live   05/10/2000  2000  05  </str>
+		<str name="title">Hemodynamic Monitoring: Concepts &amp; Controversies</str>
+		<str name="search_all">Hemodynamic Monitoring: Concepts &amp; Controversies Regularly Scheduled Series RSS Live   05/10/2000  2000  05  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -2535,8 +2535,8 @@
 	</doc>
 	<doc>
 		<str name="id">230</str>
-		<str name="title">Stress Molecules & the Limbic System</str>
-		<str name="search_all">Stress Molecules & the Limbic System Regularly Scheduled Series RSS Live   05/10/2000  2000  05  </str>
+		<str name="title">Stress Molecules &amp; the Limbic System</str>
+		<str name="search_all">Stress Molecules &amp; the Limbic System Regularly Scheduled Series RSS Live   05/10/2000  2000  05  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -2887,8 +2887,8 @@
 	</doc>
 	<doc>
 		<str name="id">262</str>
-		<str name="title">Critical Assessment of Clinical Trials, Meta-analysis & Economic Evaluations</str>
-		<str name="search_all">Critical Assessment of Clinical Trials, Meta-analysis & Economic Evaluations Regularly Scheduled Series RSS Live   05/31/2000  2000  05  </str>
+		<str name="title">Critical Assessment of Clinical Trials, Meta-analysis &amp; Economic Evaluations</str>
+		<str name="search_all">Critical Assessment of Clinical Trials, Meta-analysis &amp; Economic Evaluations Regularly Scheduled Series RSS Live   05/31/2000  2000  05  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -2942,8 +2942,8 @@
 	</doc>
 	<doc>
 		<str name="id">267</str>
-		<str name="title">Chaos, Complexity, and Case Studies: The Prevention & Competing Demands in Primary Care Study</str>
-		<str name="search_all">Chaos, Complexity, and Case Studies: The Prevention & Competing Demands in Primary Care Study Regularly Scheduled Series RSS Live   06/02/2000  2000  06  </str>
+		<str name="title">Chaos, Complexity, and Case Studies: The Prevention &amp; Competing Demands in Primary Care Study</str>
+		<str name="search_all">Chaos, Complexity, and Case Studies: The Prevention &amp; Competing Demands in Primary Care Study Regularly Scheduled Series RSS Live   06/02/2000  2000  06  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -3129,8 +3129,8 @@
 	</doc>
 	<doc>
 		<str name="id">284</str>
-		<str name="title">Omega-3 Fatty Acids & Other Novel Treatments for Bipolar Disorder</str>
-		<str name="search_all">Omega-3 Fatty Acids & Other Novel Treatments for Bipolar Disorder Regularly Scheduled Series RSS Live   06/14/2000  2000  06  </str>
+		<str name="title">Omega-3 Fatty Acids &amp; Other Novel Treatments for Bipolar Disorder</str>
+		<str name="search_all">Omega-3 Fatty Acids &amp; Other Novel Treatments for Bipolar Disorder Regularly Scheduled Series RSS Live   06/14/2000  2000  06  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -3428,8 +3428,8 @@
 	</doc>
 	<doc>
 		<str name="id">311</str>
-		<str name="title">Organ Donation & Transplantation</str>
-		<str name="search_all">Organ Donation & Transplantation Regularly Scheduled Series RSS Live   07/12/2000  2000  07  </str>
+		<str name="title">Organ Donation &amp; Transplantation</str>
+		<str name="search_all">Organ Donation &amp; Transplantation Regularly Scheduled Series RSS Live   07/12/2000  2000  07  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -4224,8 +4224,8 @@
 	</doc>
 	<doc>
 		<str name="id">383</str>
-		<str name="title">Head & Neck Cancer Therapy:  What's New?</str>
-		<str name="search_all">Head & Neck Cancer Therapy:  What's New? Regularly Scheduled Series RSS Live   09/13/2000  2000  09  </str>
+		<str name="title">Head &amp; Neck Cancer Therapy:  What's New?</str>
+		<str name="search_all">Head &amp; Neck Cancer Therapy:  What's New? Regularly Scheduled Series RSS Live   09/13/2000  2000  09  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -4313,8 +4313,8 @@
 	</doc>
 	<doc>
 		<str name="id">391</str>
-		<str name="title">Council of Child & Adolescent Psychiatry 2000</str>
-		<str name="search_all">Council of Child & Adolescent Psychiatry 2000 Regularly Scheduled Series RSS Live All grand rounds for 2000  09/19/2000  2000  09  </str>
+		<str name="title">Council of Child &amp; Adolescent Psychiatry 2000</str>
+		<str name="search_all">Council of Child &amp; Adolescent Psychiatry 2000 Regularly Scheduled Series RSS Live All grand rounds for 2000  09/19/2000  2000  09  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="description">All grand rounds for 2000</str>
@@ -5350,8 +5350,8 @@
 	</doc>
 	<doc>
 		<str name="id">485</str>
-		<str name="title">Rheumatoid Arthritis: Current Management & Future Questions</str>
-		<str name="search_all">Rheumatoid Arthritis: Current Management & Future Questions Regularly Scheduled Series RSS Live   11/08/2000  2000  11  </str>
+		<str name="title">Rheumatoid Arthritis: Current Management &amp; Future Questions</str>
+		<str name="search_all">Rheumatoid Arthritis: Current Management &amp; Future Questions Regularly Scheduled Series RSS Live   11/08/2000  2000  11  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -7736,8 +7736,8 @@
 	</doc>
 	<doc>
 		<str name="id">700</str>
-		<str name="title">Androgen Signalling & Cell Cycle Control In Prostatic Adenocarcinoma</str>
-		<str name="search_all">Androgen Signalling & Cell Cycle Control In Prostatic Adenocarcinoma Regularly Scheduled Series RSS Live   03/02/2001  2001  03  </str>
+		<str name="title">Androgen Signalling &amp; Cell Cycle Control In Prostatic Adenocarcinoma</str>
+		<str name="search_all">Androgen Signalling &amp; Cell Cycle Control In Prostatic Adenocarcinoma Regularly Scheduled Series RSS Live   03/02/2001  2001  03  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -9461,8 +9461,8 @@
 	</doc>
 	<doc>
 		<str name="id">856</str>
-		<str name="title">The Management of Challenging Cases & Complications in Cataract Surgery</str>
-		<str name="search_all">The Management of Challenging Cases & Complications in Cataract Surgery Regularly Scheduled Series RSS Live   05/16/2001  2001  05  </str>
+		<str name="title">The Management of Challenging Cases &amp; Complications in Cataract Surgery</str>
+		<str name="search_all">The Management of Challenging Cases &amp; Complications in Cataract Surgery Regularly Scheduled Series RSS Live   05/16/2001  2001  05  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>
@@ -10232,8 +10232,8 @@
 	</doc>
 	<doc>
 		<str name="id">926</str>
-		<str name="title">Council of Child & Adolescent Psychiatry 2001</str>
-		<str name="search_all">Council of Child & Adolescent Psychiatry 2001 Regularly Scheduled Series RSS Live All grand rounds for 2001  06/26/2001  2001  06  </str>
+		<str name="title">Council of Child &amp; Adolescent Psychiatry 2001</str>
+		<str name="search_all">Council of Child &amp; Adolescent Psychiatry 2001 Regularly Scheduled Series RSS Live All grand rounds for 2001  06/26/2001  2001  06  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="description">All grand rounds for 2001</str>
@@ -10730,8 +10730,8 @@
 	</doc>
 	<doc>
 		<str name="id">971</str>
-		<str name="title">mortality & Morbidity</str>
-		<str name="search_all">mortality & Morbidity Regularly Scheduled Series RSS Live   07/25/2001  2001  07  </str>
+		<str name="title">mortality &amp; Morbidity</str>
+		<str name="search_all">mortality &amp; Morbidity Regularly Scheduled Series RSS Live   07/25/2001  2001  07  </str>
 		<str name="grouping">Regularly Scheduled Series</str>
 		<int name="activity_type_id">1</int>
 		<str name="session_type">M</str>

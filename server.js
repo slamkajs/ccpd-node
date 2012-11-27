@@ -1,37 +1,17 @@
-var express = require('express'),
-	haibu = require('haibu'),
-  eyes = require('eyes');
+var express = require('express')
+  , port = process.env.PORT || 3000
+  , http = require('http');
 
-var client = new haibu.drone.Client({
-	host: 'localhost',
-	port: process.env.PORT || 3000
-});
+var app = express();
 
-client.set('views', __dirname + '/app/views');
-client.set('view engine', 'ejs');
-client.set("view options", { layout: __dirname +"/app/views/layouts/layout.ejs" });
+app.set('views', __dirname + '/app/views');
+app.set('view engine', 'ejs');
+app.set("view options", { layout: __dirname +"/app/views/layouts/layout.ejs" });
 
-require('./config/routes')(client);
+require('./config/routes')(app);
 
-client.on('listening',function(){
+app.on('listening',function(){
     console.log('ok, server is running');
-});z
-
-client.start(app, function(err, res) {
-  if(err) {
-    console.log('Error spawning app: ' + app.name);
-    return eyes.inspect(err);
-  }
-
-  console.log('Successfully spawned app: ' + app.name);
-  eyes.inspect(result);
 });
 
-client.start(app, function(err, result) {
-    eyes.inspect(err);
-    eyes.inspect(result);
-});
-
-
-// var port = process.env.PORT || 3000;
-// client.listen(port);
+http.createServer(app).listen(port);

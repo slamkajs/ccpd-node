@@ -1,12 +1,12 @@
 {
-  "user":"slamkajs",
-  "name":"ccpd-node",
-  "domain":"pizzahut.com",
-  "repository": {
-    "type":"git",
-    "url":"https://github.com/slamkajs/ccpd-node.git"
-  },
-  "scripts": {
-    "start":"server.js"
-  }
+    "user" : "slamkajs",
+    "name" : "ccpd-node",
+    "domain": "pizzahut.com",
+    "repository" : {
+        "type" : "git",
+        "url"  : "https://github.com/slamkajs/ccpd-node.git"
+    },
+    "scripts" : {
+        "start" : "server.js"
+    }
 }

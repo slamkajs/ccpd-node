@@ -1,7 +1,7 @@
 {
   "user":"slamkajs",
   "name":"ccpd-node",
-  "domain":"localhost:9002",
+  "domain":"pizzahut.com",
   "repository": {
     "type":"git",
     "url":"https://github.com/slamkajs/ccpd-node.git"

@@ -115,7 +115,7 @@ exports.search = function(req, res){
 
     // BUILD THE SOLR QUERY
     var solrQuery = solr.createQuery()
-                                   .q(query)
+                                   .fq(query)
                                    .start(startRecord)
                                    .rows(perPage)
                                    .facet({'field':'title'})

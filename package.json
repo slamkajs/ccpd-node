@@ -1,20 +1,23 @@
 {
   "name": "Activities",
   "version": "0.0.1",
-  "main": "script.js",
   "private": true,
+  "user": "slamkajs",
+  "license": "BSD",
   "scripts": {
-    "start": "script.js"
+    "start": "server.js"
   },
   "engines": {
     "node": "0.8.14",
     "npm": "1.1.65"
   },
+  "repository": {
+    "type":"local",
+    "url":"/home/justin/Sites/ccpd-node"
+  },
   "dependencies": {
     "express": "*",
     "ejs": "*",
     "solr-client":"*"
-  },
-  "author": "Justin Slamka",
-  "license": "BSD"
+  }
 }

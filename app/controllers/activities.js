@@ -134,7 +134,7 @@ exports.search = function(req, res){
         activities.list = response.docs;
         activities.facets = ret.facet_counts.facet_fields;
         activities.count = response.numFound.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        console.log(activities);
+
         pager.pages = [];
         pager.currentPage = page;
         pager.totalPages = Math.round(response.numFound/perPage);
@@ -150,7 +150,7 @@ exports.search = function(req, res){
         }
 
         res.render('activities/search', {
-            url: url,
+            url: url + '?' + url_parse[1],
             title: 'Activities',
             activities: activities,
             pager: pager
